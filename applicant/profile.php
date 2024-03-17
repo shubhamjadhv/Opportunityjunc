@@ -32,7 +32,7 @@
            <div class="panel panel-default">            
             <div class="panel-body"> 
               <div  id="image-container">
-                <img title="profile image"  data-target="#myModal"  data-toggle="modal"  src="<?php echo web_root.'applicant/'.$applicant->APPLICANTPHOTO; ?>">  
+                <img title="profile image"  data-target="#myModal"  data-toggle="modal"  src="<?php echo 'applicant/'.$applicant->APPLICANTPHOTO; ?>">  
               </div>
              </div>
           <ul class="list-group">
@@ -52,12 +52,12 @@
           <div class="box box-solid">  
             <div class="box-body no-padding">
               <ul class="nav nav-pills nav-stacked"> 
-                <li class="<?php echo ($view=='appliedjobs' || $view=='') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=appliedjobs'; ?>"><i class="fa fa-list"></i> Applied Jobs
+                <li class="<?php echo ($view=='appliedjobs' || $view=='') ? 'active': '';?>"><a href="<?php echo 'applicant/index.php?view=appliedjobs'; ?>"><i class="fa fa-list"></i> Applied Jobs
                    </a></li>
-                  <li class="<?php echo ($view=='accounts') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=accounts'; ?>"><i class="fa fa-user"></i> Accounts </a></li>
-                <li class="<?php echo ($view=='message') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=message'; ?>"><i class="fa fa-envelope-o"></i> Messages
+                  <li class="<?php echo ($view=='accounts') ? 'active': '';?>"><a href="<?php 'applicant/index.php?view=accounts'; ?>"><i class="fa fa-user"></i> Accounts </a></li>
+                <li class="<?php echo ($view=='message') ? 'active': '';?>"><a href="<?php 'applicant/index.php?view=message'; ?>"><i class="fa fa-envelope-o"></i> Messages
                   <span class="label label-success pull-right"><?php echo isset($showMsg->COUNT) ? $showMsg->COUNT : 0;?></span></a></li>
-              <!--      <li class="<?php echo ($view=='notification') ? 'active': '';?>"><a href="<?php echo web_root.'applicant/index.php?view=notification'; ?>"><i class="fa fa-bell-o"></i> Notification
+              <!--      <li class="<?php echo ($view=='notification') ? 'active': '';?>"><a href="<?php 'applicant/index.php?view=notification'; ?>"><i class="fa fa-bell-o"></i> Notification
                   <span class="label label-success pull-right"><?php echo $notif; ?></span></a></li> -->
                 <!-- <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li> -->
                 <!-- <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li> -->
@@ -119,8 +119,8 @@
     }
 ?>  
          <!--   <ul class="nav nav-tabs" id="myTab">
-        <li class="<?php echo  $_SESSION['appliedjobs']; ?>"><a href="<?php echo web_root.'applicant/index.php?view=appliedjobs'; ?>" >Applied Jobs</a></li> 
-        <li class="<?php echo  $_SESSION['accounts'];  ?>"><a href="<?php echo web_root.'applicant/index.php?view=accounts'; ?>" >Accounts</a></li> 
+        <li class="<?php echo  $_SESSION['appliedjobs']; ?>"><a href="<?php echo 'applicant/index.php?view=appliedjobs'; ?>" >Applied Jobs</a></li> 
+        <li class="<?php echo  $_SESSION['accounts'];  ?>"><a href="<?php echo 'applicant/index.php?view=accounts'; ?>" >Accounts</a></li> 
       </ul>
           
       <div class="tab-content bottomline">

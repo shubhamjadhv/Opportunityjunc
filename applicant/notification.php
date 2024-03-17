@@ -36,7 +36,7 @@
                         foreach ($cur as $result) {
                           # code...
                           echo '<tr>'; 
-                          echo '<td class="mailbox-name"><a href="'.web_root.'index.php?q=viewjob&search='.$result->JOBID.'">'.$result->OCCUPATIONTITLE.'</a></td>';
+                          echo '<td class="mailbox-name"><a href="index.php?q=viewjob&search='.$result->JOBID.'">'.$result->OCCUPATIONTITLE.'</a></td>';
                           echo '<td class="mailbox-subject">'.$result->JOBDESCRIPTION.'</td>'; 
                           echo '<td class="mailbox-date">'.$result->QUALIFICATION_WORKEXPERIENCE.'</td>';
                           echo '<td class="mailbox-date">'.$result->DATEPOSTED.'</td>';
