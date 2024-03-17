@@ -31,7 +31,7 @@ function doSubmitApplication() {
 
 		if ($picture=="") {
 			# code...
-			redirect(web_root."index.php?q=apply&job=".$jobid."&view=personalinfo");
+			redirect("index.php?q=apply&job=".$jobid."&view=personalinfo");
 		}else{ 
 			
 			if (isset($_SESSION['APPLICANTID'])) {
@@ -218,7 +218,7 @@ function doLogin(){
        // $sql="INSERT INTO `tbllogs` (`USERID`,USERNAME, `LOGDATETIME`, `LOGROLE`, `LOGMODE`) 
        //    VALUES (".$_SESSION['USERID'].",'".$_SESSION['FULLNAME']."','".date('Y-m-d H:i:s')."','".$_SESSION['UROLE']."','Logged in')";
        //    mysql_query($sql) or die(mysql_error()); 
-         redirect(web_root."applicant/");
+         redirect("applicant/");
      
     }else{
     	 echo "Account does not exist! Please contact Administrator."; 
@@ -238,12 +238,12 @@ function UploadImage($jobid=0){
 			return  date("dmYhis") . basename($_FILES["picture"]["name"]);
 		}else{
 			message("Error Uploading File","error");
-			// redirect(web_root."index.php?q=apply&job=".$jobid."&view=personalinfo");
+			// redirect("index.php?q=apply&job=".$jobid."&view=personalinfo");
 			// exit;
 		}
 	}else{
 			message("File Not Supported","error");
-			// redirect(web_root."index.php?q=apply&job=".$jobid."&view=personalinfo");
+			// redirect("index.php?q=apply&job=".$jobid."&view=personalinfo");
 			// exit;
 		}
 } 

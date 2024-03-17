@@ -26,7 +26,7 @@
 
     foreach ($cur as $result) {
         echo '<tr>';
-        echo '<td><a href="'.web_root.'index.php?q=viewjob&search='.$result->JOBID.'">'.$result->OCCUPATIONTITLE.'</a></td>';
+        echo '<td><a href="index.php?q=viewjob&search='.$result->JOBID.'">'.$result->OCCUPATIONTITLE.'</a></td>';
         echo '<td>'.$result->COMPANYNAME.'</td>';
         echo '<td>'.$result->COMPANYADDRESS.'</td>';
         echo '<td>'.date_format(date_create($result->DATEPOSTED),'m/d/Y').'</td>';

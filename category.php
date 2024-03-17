@@ -32,7 +32,7 @@
 
           <div class="panel panel-primary">
               <div class="panel-header">
-                   <div style="border-bottom: 1px solid #ddd;padding: 10px;font-size: 20px;font-weight: bold;color: #000;margin-bottom: 5px;"><a href="<?php echo web_root.'index.php?q=viewjob&search='.$result->JOBID;?>"><?php echo $result->OCCUPATIONTITLE ;?></a> 
+                   <div style="border-bottom: 1px solid #ddd;padding: 10px;font-size: 20px;font-weight: bold;color: #000;margin-bottom: 5px;"><a href="<?php echo 'index.php?q=viewjob&search='.$result->JOBID;?>"><?php echo $result->OCCUPATIONTITLE ;?></a> 
                   </div> 
               </div>
               <div class="panel-body contentbody">
@@ -67,7 +67,7 @@
                             <p>Location :  <?php echo  $result->COMPANYADDRESS ?></p>  
                         </div>
                     </div>
-                    <div class="col-sm-2"> <a href="<?php echo web_root; ?>index.php?q=apply&job=<?php echo $result->JOBID;?>&view=personalinfo" class="btn btn-main btn-next-tab">Apply Now !</a></div>
+                    <div class="col-sm-2"> <a href="<?php echo  ?>index.php?q=apply&job=<?php echo $result->JOBID;?>&view=personalinfo" class="btn btn-main btn-next-tab">Apply Now !</a></div>
                 </div> 
               <div class="panel-footer">
                   Date Posted :  <?php echo date_format(date_create($result->DATEPOSTED),'M d, Y'); ?>
