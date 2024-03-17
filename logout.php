@@ -14,6 +14,6 @@ require_once 'include/initialize.php';
 unset($_SESSION['APPLICANTID']);
 unset($_SESSION['USERNAME']);    
 // 4. Destroy the session
-// session_destroy();
-redirect(web_root."index.php");
+session_destroy();
+redirect("index.php");
 ?>
