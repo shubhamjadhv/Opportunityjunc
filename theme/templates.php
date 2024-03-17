@@ -103,7 +103,7 @@
                     $msg =isset($showMsg->COUNT) ? $showMsg->COUNT : 0;
 
                   #  echo ' <p class="pull-right login"> | <a title="View Message(s)" href="applicant/index.php?view=message"> <i class="fa fa-envelope-o"></i> <span class="label label-success">'.$msg.'</span></a> | <a title="View Profile" href="applicant/"> <i class="fa fa-user"></i>'. $appl->FNAME. ' '.$appl->LNAME .' </a> | <a href="logout.php">  <i class="fa fa-sign-out"> </i>Logout</a> </p>';
-                    echo ' <p class="pull-right login"><a title="View Notification(s)" href="'.web_root.'applicant/index.php?view=notification"> <i class="fa fa-bell-o"></i> <span class="label label-success">'.$notif.'</span></a> | <a title="View Message(s)" href="'.web_root.'applicant/index.php?view=message"> <i class="fa fa-envelope-o"></i> <span class="label label-success">'.$msg.'</span></a> | <a title="View Profile" href="'.web_root.'applicant/"> <i class="fa fa-user"></i> Howdy, '. $appl->FNAME. ' '.$appl->LNAME .' </a> | <a href="'.web_root.'logout.php">  <i class="fa fa-sign-out"> </i>Logout</a> </p>';
+                    echo ' <p class="pull-right login"><a title="View Notification(s)" href="applicant/index.php?view=notification"> <i class="fa fa-bell-o"></i> <span class="label label-success">'.$notif.'</span></a> | <a title="View Message(s)" href="applicant/index.php?view=message"> <i class="fa fa-envelope-o"></i> <span class="label label-success">'.$msg.'</span></a> | <a title="View Profile" href="applicant/"> <i class="fa fa-user"></i> Howdy, '. $appl->FNAME. ' '.$appl->LNAME .' </a> | <a href="logout.php">  <i class="fa fa-sign-out"> </i>Logout</a> </p>';
 
                     }else{ ?>
                       <p   class="pull-right login"><a data-target="#myModal" data-toggle="modal" href=""> <i class="fa fa-lock"></i> Login </a></p>
@@ -153,12 +153,12 @@
                                   # code...
                                    if ($result->CATEGORY==$_GET['search']) {
                                      # code...
-                                    $viewresult = '<li class="active"><a href="'.web_root.'index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
+                                    $viewresult = '<li class="active"><a href="index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
                                    }else{
-                                    $viewresult = '<li><a href="'.web_root.'index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
+                                    $viewresult = '<li><a href="index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
                                    }
                                 }else{
-                                    $viewresult = '<li><a href="'.web_root.'index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
+                                    $viewresult = '<li><a href="index.php?q=category&search='.$result->CATEGORY.'">'.$result->CATEGORY.' Jobs</a></li>';
                                 } 
 
                                 echo $viewresult;
