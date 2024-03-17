@@ -1,8 +1,8 @@
 <?php 
-require_once("../include/initialize.php");  
+require_once("../include/database.php");  
 if (!isset($_SESSION['APPLICANTID'])) {
 	# code...
-	redirect('./Opportunityjunc//index.php');
+	redirect('./Opportunityjunc/index.php');
 }
 $view = (isset($_GET['view']) && $_GET['view'] != '') ? $_GET['view'] : '';
 switch ($view) { 
