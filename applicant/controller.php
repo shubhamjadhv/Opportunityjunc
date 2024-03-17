@@ -86,7 +86,7 @@ switch ($action) {
 						$applicant = New Applicants();
 						$applicant->APPLICANTPHOTO 			= $location;
 						$applicant->update($_SESSION['APPLICANTID']);
-						redirect(web_root."applicant/");
+						redirect("applicant/");
 						 
 							
 					}
