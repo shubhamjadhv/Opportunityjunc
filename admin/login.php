@@ -5,7 +5,7 @@ require_once("../include/initialize.php");
   <?php
  // login confirmation
   if(isset($_SESSION['ADMIN_USERID'])){
-    redirect(web_root."admin/index.php");
+    redirect("admin/index.php");
   }
   ?>
    
@@ -18,13 +18,13 @@ require_once("../include/initialize.php");
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
-  <link rel="stylesheet" href="<?php echo web_root;?>bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo web_root;?>plugins/font-awesome/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css"> 
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo web_root;?>dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="<?php echo web_root;?>plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,11 +120,11 @@ if(isset($_POST['btnLogin'])){
         unset( $_SESSION['ROLE'] );
         unset($_SESSION['PICLOCATION']);
 
-         redirect(web_root."admin/index.php");
+         redirect("admin/index.php");
       // } 
     }else{
       message("INVALID!! USERNAME & PASSWORD .", "error");
-       redirect(web_root."admin/login.php"); 
+       redirect("admin/login.php"); 
     }
  }
  } 
@@ -132,11 +132,11 @@ if(isset($_POST['btnLogin'])){
 
 
 <!-- jQuery 2.1.4 -->
-<script src="<?php echo web_root;?>plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
-<script src="<?php echo web_root;?>bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="<?php echo web_root;?>plugins/iCheck/icheck.min.js"></script>
+<script src="plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({
