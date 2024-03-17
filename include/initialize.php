@@ -24,7 +24,7 @@ require_once("companies.php");
 require_once("job.php");
 require_once("employees.php");
 require_once("categories.php");
-require_once("applicant.php");
+require_once("applicants.php");
 require_once("jobregistration.php");
 
 require_once("database.php");
