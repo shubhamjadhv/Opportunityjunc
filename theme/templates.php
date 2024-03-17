@@ -7,18 +7,18 @@
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
 <!-- css -->
-<link href="<?php echo web_root; ?>plugins/home-plugins/css/bootstrap.min.css" rel="stylesheet" />
-<link href="<?php echo web_root; ?>plugins/home-plugins/css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
-<link href="<?php echo web_root; ?>plugins/home-plugins/css/flexslider.css" rel="stylesheet" /> 
-<link href="<?php echo web_root; ?>plugins/home-plugins/css/style.css" rel="stylesheet" />
+<link href="plugins/home-plugins/css/bootstrap.min.css" rel="stylesheet" />
+<link href="plugins/home-plugins/css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="plugins/home-plugins/css/flexslider.css" rel="stylesheet" /> 
+<link href="plugins/home-plugins/css/style.css" rel="stylesheet" />
 <!-- <link rel="stylesheet" href="<?php echo web_root;?>plugins/dataTables/dataTables.bootstrap.css">  --> 
 <link rel="stylesheet" href="<?php echo web_root;?>plugins/font-awesome/css/font-awesome.min.css"> 
 
 <link rel="stylesheet" href="<?php echo web_root;?>plugins/dataTables/jquery.dataTables.min.css"> 
 <link rel="stylesheet" href="<?php echo web_root;?>plugins/dataTables/jquery.dataTables_themeroller.css"> 
 <!-- datetime picker CSS -->
-<link href="<?php echo web_root; ?>plugins/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
-<link href="<?php echo web_root; ?>plugins/datepicker/datepicker3.css" rel="stylesheet" media="screen">
+<link href="plugins/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="plugins/datepicker/datepicker3.css" rel="stylesheet" media="screen">
  
 
 <style type="text/css">
@@ -122,18 +122,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo web_root; ?>index.php">Opportunity Junction<!-- <img src="<?php echo web_root; ?>plugins/home-plugins/img/logo.png" alt="logo"/> --></a>
+                    <a class="navbar-brand" href="index.php">Opportunity Junction<!-- <img src="plugins/home-plugins/img/logo.png" alt="logo"/> --></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="<?php echo !isset($_GET['q'])? 'active' :''?>"><a href="<?php echo web_root; ?>index.php">Home</a></li> 
+                        <li class="<?php echo !isset($_GET['q'])? 'active' :''?>"><a href="index.php">Home</a></li> 
                         <li class="dropdown">
                           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Job Search <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                              <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='advancesearch'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="<?php echo web_root; ?>index.php?q=advancesearch">Advance Search</a></li>
-                              <li><a href="<?php echo web_root; ?>index.php?q=search-company">Job By Company</a></li>
-                              <li><a href="<?php echo web_root; ?>index.php?q=search-function">Job By Function</a></li>
-                              <li><a href="<?php echo web_root; ?>index.php?q=search-jobtitle">Job By Title</a></li>
+                              <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='advancesearch'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=advancesearch">Advance Search</a></li>
+                              <li><a href="index.php?q=search-company">Job By Company</a></li>
+                              <li><a href="index.php?q=search-function">Job By Function</a></li>
+                              <li><a href="index.php?q=search-jobtitle">Job By Title</a></li>
                          <!--      <li><a href="#">Job for Women</a></li>
                               <li><a href="#">Job for Men</a></li> -->
                           </ul>
@@ -168,10 +168,10 @@
                             ?> 
                           </ul>
                        </li> 
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='company'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="<?php echo web_root; ?>index.php?q=company">Company</a></li>
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='hiring'){ echo 'active'; }else{ echo ''; }} ?>"><a href="<?php echo web_root; ?>index.php?q=hiring">Hiring Now</a></li>
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='About'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="<?php echo web_root; ?>index.php?q=About">About Us</a></li>
-                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='Contact'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="<?php echo web_root; ?>index.php?q=Contact">Contact</a></li>
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='company'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=company">Company</a></li>
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='hiring'){ echo 'active'; }else{ echo ''; }} ?>"><a href="index.php?q=hiring">Hiring Now</a></li>
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='About'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=About">About Us</a></li>
+                        <li class="<?php  if(isset($_GET['q'])) { if($_GET['q']=='Contact'){ echo 'active'; }else{ echo ''; }}  ?>"><a href="index.php?q=Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -278,35 +278,35 @@
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.easing.1.3.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/bootstrap.min.js"></script>
+<script src="plugins/home-plugins/js/jquery.js"></script>
+<script src="plugins/home-plugins/js/jquery.easing.1.3.js"></script>
+<script src="plugins/home-plugins/js/bootstrap.min.js"></script>
  
 
-<script type="text/javascript" src="<?php echo web_root; ?>plugins/dataTables/dataTables.bootstrap.min.js" ></script>  
-<script src="<?php echo web_root; ?>plugins/datatables/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.min.js" ></script>  
+<script src="plugins/datatables/jquery.dataTables.min.js"></script> 
 
-<script type="text/javascript" src="<?php echo web_root; ?>plugins/datepicker/bootstrap-datepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="<?php echo web_root; ?>plugins/datepicker/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="<?php echo web_root; ?>plugins/datepicker/locales/bootstrap-datetimepicker.uk.js" charset="UTF-8"></script>
+<script type="text/javascript" src="plugins/datepicker/bootstrap-datepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="plugins/datepicker/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="plugins/datepicker/locales/bootstrap-datetimepicker.uk.js" charset="UTF-8"></script>
 
-<script type="text/javascript" language="javascript" src="<?php echo web_root; ?>plugins/input-mask/jquery.inputmask.js"></script> 
-<script type="text/javascript" language="javascript" src="<?php echo web_root; ?>plugins/input-mask/jquery.inputmask.date.extensions.js"></script> 
-<script type="text/javascript" language="javascript" src="<?php echo web_root; ?>plugins/input-mask/jquery.inputmask.extensions.js"></script> 
+<script type="text/javascript" language="javascript" src="plugins/input-mask/jquery.inputmask.js"></script> 
+<script type="text/javascript" language="javascript" src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script> 
+<script type="text/javascript" language="javascript" src="plugins/input-mask/jquery.inputmask.extensions.js"></script> 
 
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.fancybox.pack.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.fancybox-media.js"></script>  
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.flexslider.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/animate.js"></script>
+<script src="plugins/home-plugins/js/jquery.fancybox.pack.js"></script>
+<script src="plugins/home-plugins/js/jquery.fancybox-media.js"></script>  
+<script src="plugins/home-plugins/js/jquery.flexslider.js"></script>
+<script src="plugins/home-plugins/js/animate.js"></script>
 
 
 <!-- Vendor Scripts -->
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/modernizr.custom.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.isotope.min.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/animate.js"></script>
-<script src="<?php echo web_root; ?>plugins/home-plugins/js/custom.js"></script> 
-<!-- <script src="<?php echo web_root; ?>plugins/paralax/paralax.js"></script>  -->
+<script src="plugins/home-plugins/js/modernizr.custom.js"></script>
+<script src="plugins/home-plugins/js/jquery.isotope.min.js"></script>
+<script src="plugins/home-plugins/js/jquery.magnific-popup.min.js"></script>
+<script src="plugins/home-plugins/js/animate.js"></script>
+<script src="plugins/home-plugins/js/custom.js"></script> 
+<!-- <script src="plugins/paralax/paralax.js"></script>  -->
 
  <script type="text/javascript">
    
