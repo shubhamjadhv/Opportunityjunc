@@ -12,6 +12,9 @@ defined('SITE_ROOT') ? null : define('SITE_ROOT', $_SERVER['DOCUMENT_ROOT'] . DS
 // Define LIB_PATH if not already defined
 defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT . DS . 'include');
 
+echo LIB_PATH;
+echo DS;
+
 // Load the database configuration first.
 require_once(LIB_PATH . DS . "config.php");
 require_once(LIB_PATH . DS . "function.php");
