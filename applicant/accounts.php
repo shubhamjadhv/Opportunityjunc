@@ -1,7 +1,5 @@
   <?php 
     $applicant = new Applicants();
-    
-
     $appl = $applicant->single_applicant($_SESSION['APPLICANTID']);
   ?>
   <style type="text/css">

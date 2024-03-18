@@ -182,8 +182,6 @@ class Applicants {
 	
 	}	
 
-	public function setQuery($sql) {
-		$this->sql_string=$sql;
-	}
+	
 }
 ?>
