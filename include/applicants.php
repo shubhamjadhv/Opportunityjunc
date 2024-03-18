@@ -182,7 +182,7 @@ class Applicants {
 	
 	}	
 
-	function setQuery($sql) {
+	public function setQuery($sql) {
 		$this->sql_string=$sql;
 	}
 }
