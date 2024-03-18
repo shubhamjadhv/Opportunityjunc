@@ -31,13 +31,15 @@ class Applicants {
 		return $row_count;
 	}
 	 
-	function single_applicant($id){
-			global $mydb;
-			$mydb->setQuery("SELECT * FROM ".self::$tblname." 
-				Where APPLICANTID= '{$id}' LIMIT 1");
-			$cur = $mydb->loadSingleResult();
-			return $cur;
+	function single_applicant($id) {
+		global $mydb;
+		$id = intval($id); // Cast $id to an integer
+		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
+			WHERE APPLICANTID = '{$id}' LIMIT 1");
+		$cur = $mydb->loadSingleResult();
+		return $cur;
 	}
+	
 	function select_applicant($id=""){
 			global $mydb;
 			$mydb->setQuery("SELECT * FROM ".self::$tblname." 
