@@ -31,7 +31,7 @@ class Applicants {
 		return $row_count;
 	}
 	 
-	function single_applicant($id=""){
+	function single_applicant($id){
 			global $mydb;
 			$mydb->setQuery("SELECT * FROM ".self::$tblname." 
 				Where APPLICANTID= '{$id}' LIMIT 1");
