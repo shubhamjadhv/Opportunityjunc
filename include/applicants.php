@@ -1,5 +1,7 @@
 <?php
-//require_once('database.php');
+require_once('initialize.php');
+require_once('database.php');
+
 class Applicants {
 	protected static  $tblname = "tblapplicants";
 
@@ -31,7 +33,7 @@ class Applicants {
 		return $row_count;
 	}
 	 
-	function single_applicant($id) {
+	function single_applicant($id="") {
 		global $mydb;
 		$id = intval($id); // Cast $id to an integer
 		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
