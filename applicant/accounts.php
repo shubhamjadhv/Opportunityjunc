@@ -1,6 +1,6 @@
   <?php 
     $applicant = new Applicants();
-    echo $_SESSION['APPLICANTID'];
+    
 
     $appl = $applicant->single_applicant($_SESSION['APPLICANTID']);
   ?>

@@ -35,7 +35,9 @@ class Applicants {
 	 
 	function single_applicant($id="") {
 		global $mydb;
-		$id = intval($id); // Cast $id to an integer
+		$id = intval($id);
+		echo $id;
+		// Cast $id to an integer
 		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
 			WHERE APPLICANTID = '{$id}' LIMIT 1");
 		$cur = $mydb->loadSingleResult();
