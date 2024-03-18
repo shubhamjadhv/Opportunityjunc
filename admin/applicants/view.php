@@ -80,7 +80,7 @@ global $mydb;
 	</div> 
 	<div class="col-sm-6">
 		<ul> 
-            <li><i class="fp-ht-tv"></i>Prefered Sex : <?php echo $job->PREFEREDSEX; ?></li>
+            <li><i class="fp-ht-tv"></i>Prefered Gender : <?php echo $job->PREFEREDSEX; ?></li>
             <li><i class="fp-ht-computer"></i>Sector of Vacancy : <?php echo $job->SECTOR_VACANCY; ?></li>
         </ul>
 	</div>
@@ -105,7 +105,7 @@ global $mydb;
 		<li>Address : <?php echo $appl->ADDRESS; ?></li>
 		<li>Contact No. : <?php echo $appl->CONTACTNO;?></li>
 		<li>Email Address. : <?php echo $appl->EMAILADDRESS;?></li>
-		<li>Sex: <?php echo $appl->SEX;?></li>
+		<li>Gender: <?php echo $appl->SEX;?></li>
 		<li>Age : <?php echo $appl->AGE;?></li> 
 	</ul>
 	<div class="col-sm-12"> 
