@@ -32,7 +32,7 @@ class Database {
 
 	}
 	
-	function setQuery($sql='') {
+	function setQuery($sql) {
 		$this->sql_string=$sql;
 	}
 	
