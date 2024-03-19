@@ -32,9 +32,8 @@ class Applicants {
 		return $row_count;
 	}
 	 
-	function single_applicant($id="") {
-		global $mydb;
-		$id = intval($id);
+	function single_applicant($id) {
+		$mydb=new mysqli("apache001.mysql.database.azure.com","shubhamj","omkar@29","erisdb");
 		
 		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
 			WHERE APPLICANTID = '{$id}' LIMIT 1");
