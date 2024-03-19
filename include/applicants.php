@@ -1,14 +1,13 @@
 <?php
 
 require_once('database.php');
-
+$mydb = new Database();
 class Applicants {
 	protected static  $tblname = "tblapplicants";
 
 	function dbfields () {
 		global $mydb;
 		return $mydb->getfieldsononetable(self::$tblname);
-
 	}
 	function listofapplicant(){
 		global $mydb;
