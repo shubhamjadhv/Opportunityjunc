@@ -33,7 +33,8 @@ class Applicants {
 	}
 	 
 	function single_applicant($id) {
-		$mydb=new mysqli("apache001.mysql.database.azure.com","shubhamj","omkar@29","erisdb");
+		global $mydb;
+		
 		
 		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
 			WHERE APPLICANTID = '{$id}' LIMIT 1");
