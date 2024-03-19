@@ -35,12 +35,17 @@ class Applicants {
 	function single_applicant($id="") {
 		global $mydb;
 		$id = intval($id);
+	
+		$tableName = self::$tblname; // Assuming self::$tblname contains the table name
 		
-		$mydb->setQuery("SELECT * FROM " . self::$tblname . " 
-			WHERE APPLICANTID = '{$id}' LIMIT 1");
-		$cur = $mydb->loadSingleResult();
+		$query = "SELECT * FROM " . $tableName . " 
+				  WHERE APPLICANTID = '{$id}' LIMIT 1";
+	
+		$result = $mydb->executeQuery($query);
+		$cur = $mydb->fetch_array($result);
 		return $cur;
 	}
+	
 	
 	function select_applicant($id=""){
 			global $mydb;
