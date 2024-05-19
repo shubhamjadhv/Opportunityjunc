@@ -1,6 +1,6 @@
 <?php
-defined('server') ? null : define("server", "apache001.mysql.database.azure.com");
-defined('user') ? null : define ("user", "shubhamj") ;
+defined('server') ? null : define("server", "apache.mysql.database.azure.com");
+defined('user') ? null : define ("user", "shubham") ;
 defined('pass') ? null : define("pass","Admin123");
 defined('database_name') ? null : define("database_name", "erisdb") ;
 
