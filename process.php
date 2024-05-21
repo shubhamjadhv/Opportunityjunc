@@ -170,7 +170,7 @@ function doRegister(){
 			$auto = $autonum->set_autonumber('APPLICANT');
 			 
 			$applicant =New Applicants();
-			$applicant->APPLICANTID = date('Y').$auto->AUTO;
+			//$applicant->APPLICANTID = date('Y').$auto->AUTO;
 			$applicant->FNAME = $_POST['FNAME'];
 			$applicant->LNAME = $_POST['LNAME'];
 			$applicant->MNAME = $_POST['MNAME'];
